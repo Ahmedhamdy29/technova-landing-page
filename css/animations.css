@@ -1,0 +1,137 @@
+/*
+   TechNova - Animations
+   Restrained motion for a practical, human-made digital interface.
+============================================================ */
+
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal--fade-up {
+  transform: translateY(18px);
+}
+
+.reveal--fade-down {
+  transform: translateY(-14px);
+}
+
+.reveal--fade-left {
+  transform: translateX(22px);
+}
+
+.reveal--fade-right {
+  transform: translateX(-22px);
+}
+
+.reveal--scale {
+  transform: scale(0.98);
+}
+
+.reveal--fade {
+  transform: none;
+}
+
+.reveal--on-load.is-visible {
+  animation: none;
+}
+
+.reveal--stagger-parent.is-visible {
+  opacity: 1;
+}
+
+.stat-item__number.is-counted {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .stat-item__number.is-counted {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---- Animated SVG hero visual ---- */
+@keyframes hero-illustration-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0) rotate(1.2deg) scale(1.018);
+  }
+}
+
+@keyframes hero-illustration-glow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.12);
+  }
+}
+
+.hero__illustration {
+  animation: hero-illustration-float 4.6s ease-in-out infinite;
+  will-change: transform;
+  transition: transform 320ms cubic-bezier(0.23, 1, 0.32, 1), filter 320ms ease;
+}
+
+.hero__visual::before {
+  animation: hero-illustration-glow 4.6s ease-in-out infinite;
+  will-change: opacity, transform;
+  transition: opacity 320ms ease, transform 320ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero__visual {
+    cursor: pointer;
+  }
+
+  .hero__visual:hover .hero__illustration {
+    animation: none;
+    transform: translate3d(0, -18px, 0) rotate(2deg) scale(1.055);
+    filter: drop-shadow(0 24px 34px rgba(99, 102, 241, 0.34));
+  }
+
+  .hero__visual:hover::before {
+    animation: none;
+    opacity: 1;
+    transform: scale(1.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__illustration,
+  .hero__visual::before {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* ============================================
+   End of animations
+   ============================================ */

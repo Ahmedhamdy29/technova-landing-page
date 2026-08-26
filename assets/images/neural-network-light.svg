@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" fill="none">
+  <g stroke="#164B91" stroke-width="1.8" opacity="0.66">
+    <path d="M42 144 220 72l164 126 166-86 170 126 182-122 180 118 212-130"/>
+    <path d="M42 144 160 284l224-86 108 194 58-280 170 126 80 166 182-288 180 118 212-130"/>
+    <path d="M88 560 252 430l174 118 170-94 184 154 178-152 190 102 176-136"/>
+    <path d="M88 560 142 760l284-212 178 218 78-158 186 154 112-208 190 102 214-136"/>
+    <path d="M384 198 426 548M732 236 800 500M932 116 930 366M1112 234 1150 482"/>
+  </g>
+  <g stroke="#067A54" stroke-width="1.8" opacity="0.78">
+    <path d="M160 284 252 430M426 548 600 454M600 454 800 500M930 366 980 468M1150 482 1270 604"/>
+    <path d="M220 72 384 198M550 112 732 236M1102 232 1270 604"/>
+  </g>
+  <g fill="#EAF0F6" stroke="#164B91" stroke-width="2.4">
+    <circle cx="42" cy="144" r="7"/><circle cx="220" cy="72" r="7"/><circle cx="384" cy="198" r="8"/>
+    <circle cx="550" cy="112" r="7"/><circle cx="720" cy="238" r="8"/><circle cx="902" cy="116" r="7"/>
+    <circle cx="1082" cy="234" r="8"/><circle cx="1294" cy="104" r="7"/><circle cx="160" cy="284" r="7"/>
+    <circle cx="426" cy="548" r="8"/><circle cx="600" cy="454" r="7"/><circle cx="800" cy="500" r="8"/>
+    <circle cx="930" cy="366" r="7"/><circle cx="1150" cy="482" r="8"/><circle cx="1270" cy="604" r="7"/>
+    <circle cx="142" cy="760" r="7"/><circle cx="320" cy="626" r="7"/><circle cx="500" cy="766" r="8"/>
+    <circle cx="686" cy="608" r="7"/><circle cx="874" cy="762" r="8"/><circle cx="1086" cy="554" r="7"/>
+  </g>
+  <g fill="#067A54" opacity="0.88" font-family="monospace" font-size="16" letter-spacing="2">
+    <text x="94" y="218">01</text><text x="458" y="78">AI</text><text x="780" y="176">10</text>
+    <text x="1190" y="170">DATA</text><text x="216" y="680">24.7ms</text><text x="720" y="690">0110</text>
+    <text x="1010" y="640">NODE_08</text>
+  </g>
+</svg>

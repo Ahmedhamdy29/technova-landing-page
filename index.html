@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TechNova - We create modern digital solutions that help businesses grow, connect with customers, and achieve their goals faster."
+    />
+    <title>TechNova | Build Your Digital Future</title>
+    <script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var prefersLight = window.matchMedia(
+          "(prefers-color-scheme: light)"
+        ).matches;
+        var theme = stored || (prefersLight ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
+    <link rel="stylesheet" href="css/styles.css?v=hero-whatsapp-3" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#" class="logo" aria-label="TechNova home">
+          <span class="logo__mark" aria-hidden="true">
+            <span></span><span></span>
+          </span>
+          <span class="logo__text">TechNova</span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--primary nav__cta">Get Started</a>
+        </nav>
+
+        <div class="header__actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch to light mode"
+          >
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero__glow"></div>
+        <div class="hero__grid"></div>
+        <div class="container hero__content">
+          <div class="hero__text">
+            <div class="hero__badge">
+              <span class="hero__badge-dot"></span>
+              Digital Solutions Agency
+            </div>
+            <h1 class="hero__title">
+              Build Your <span class="gradient-text">Digital Future</span>
+            </h1>
+            <p class="hero__description">
+              We create modern digital solutions that help businesses grow,
+              connect with customers, and achieve their goals faster.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Get Started</a>
+              <a href="#services" class="btn btn--outline">Learn More</a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-label="Digital product dashboard interface">
+            <img
+              id="heroIllustration"
+              class="hero__illustration hero__illustration--dark"
+              src="assets/images/hero-illustration.svg"
+              alt=""
+              width="520"
+              height="520"
+              decoding="async"
+              fetchpriority="high"
+            />
+            <img
+              class="hero__illustration hero__illustration--light"
+              src="assets/images/hero-illustration-light.svg"
+              alt=""
+              width="520"
+              height="520"
+              decoding="async"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section class="stats" aria-label="Company statistics">
+        <div class="container">
+          <div class="stats__grid">
+            <div class="stat-item">
+              <div class="stat-item__number" data-count="150" data-suffix="+">0+</div>
+              <div class="stat-item__label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-item__number" data-count="50" data-suffix="+">0+</div>
+              <div class="stat-item__label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-item__number" data-count="5" data-suffix="+">0+</div>
+              <div class="stat-item__label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-item__number" data-count="24" data-suffix="/7">0/7</div>
+              <div class="stat-item__label">Support</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services__header">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">
+              We deliver end-to-end digital solutions tailored to your business
+              needs.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <article class="service-card">
+              <div class="service-card__icon">
+                <img src="assets/icons/icon-web.svg" alt="" width="28" height="28" />
+              </div>
+              <h3 class="service-card__title">Web Development</h3>
+              <p class="service-card__description">
+                Modern and responsive websites built for performance.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card__icon">
+                <img src="assets/icons/icon-design.svg" alt="" width="28" height="28" />
+              </div>
+              <h3 class="service-card__title">UI/UX Design</h3>
+              <p class="service-card__description">
+                Clean and user-friendly interfaces designed around your users.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card__icon">
+                <img src="assets/icons/icon-mobile.svg" alt="" width="28" height="28" />
+              </div>
+              <h3 class="service-card__title">Mobile Development</h3>
+              <p class="service-card__description">
+                Fast and reliable mobile applications for iOS and Android.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="testimonials__header">
+            <span class="section-label">Client Stories</span>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">
+              Hear from businesses we've helped transform their digital presence.
+            </p>
+          </div>
+
+          <div class="testimonials__grid">
+            <article class="testimonial-card">
+              <svg
+                class="testimonial-card__quote-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
+                />
+              </svg>
+              <blockquote class="testimonial-card__text">
+                "TechNova transformed our idea into a professional website that
+                exceeded our expectations."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <img
+                  src="assets/images/avatar-ahmed.svg"
+                  alt="Ahmed Hassan"
+                  class="testimonial-card__avatar"
+                  width="48"
+                  height="48"
+                />
+                <div>
+                  <div class="testimonial-card__name">Ahmed Hassan</div>
+                  
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <svg
+                class="testimonial-card__quote-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
+                />
+              </svg>
+              <blockquote class="testimonial-card__text">
+                "Excellent design, fast delivery, and very clean implementation."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <img
+                  src="assets/images/avatar-sara.svg"
+                  alt="Sara Mohamed"
+                  class="testimonial-card__avatar"
+                  width="48"
+                  height="48"
+                />
+                <div>
+                  <div class="testimonial-card__name">Sara Mohamed</div>
+                  
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__wrapper">
+            <div class="contact__info">
+              <span class="section-label">Get In Touch</span>
+              <h2 class="section-title">Contact Us</h2>
+              <p class="section-subtitle">
+                Ready to start your project? Reach out and let's build something
+                great together.
+              </p>
+
+              <ul class="contact__list">
+                <li class="contact-item">
+                  <div class="contact-item__icon">
+                    <img src="assets/icons/icon-email.svg" alt="" width="20" height="20" />
+                  </div>
+                  <div>
+                    <div class="contact-item__label">Email</div>
+                    <div class="contact-item__value">
+                      <a href="mailto:hello@technova.com">hello@technova.com</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="contact-item">
+                  <div class="contact-item__icon">
+                    <img src="assets/icons/icon-phone.svg" alt="" width="20" height="20" />
+                  </div>
+                  <div>
+                    <div class="contact-item__label">Phone</div>
+                    <div class="contact-item__value">
+                      <a href="tel:+201001234567">+20 100 123 4567</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="contact-item">
+                  <div class="contact-item__icon">
+                    <img src="assets/icons/icon-location.svg" alt="" width="20" height="20" />
+                  </div>
+                  <div>
+                    <div class="contact-item__label">Location</div>
+                    <div class="contact-item__value">Alexandria, Egypt</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact__whatsapp-card">
+              <span class="section-label">Quick Contact</span>
+              <h3 class="contact__whatsapp-title">Let’s talk on WhatsApp</h3>
+              <p class="contact__whatsapp-description">
+                Tell us about your project directly and we’ll get back to you as soon as possible.
+              </p>
+              <a
+                class="btn btn--whatsapp"
+                href="https://wa.me/201001234567?text=Hello%20TechNova%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with TechNova on WhatsApp"
+              >
+                <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.3Zm-8.4 18.1h-.1c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.2 6.4 6.6 2 12.1 2c2.7 0 5.1 1 7 2.9 1.9 1.9 2.9 4.3 2.9 7 0 5.5-4.4 9.7-9.9 9.7Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.3-.3-.5.3-.4.8-1.4.1-.2.1-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3.7.3 1.3.5 1.8.7.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4Z" />
+                </svg>
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copyright">
+          &copy; 2026 TechNova. All rights reserved.
+        </p>
+        <ul class="footer__links">
+          <li><a href="#services" class="footer__link">Services</a></li>
+          <li><a href="#testimonials" class="footer__link">Testimonials</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
